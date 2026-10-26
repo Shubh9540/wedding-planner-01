@@ -7,7 +7,7 @@ export const GallerySection = ({ data }: { data?: GalleryData }) => {
   if (!data || !data.images) return null;
 
   return (
-    <section className="w-full bg-[#fdfaf6] py-16 lg:py-12">
+    <section id="gallery" className="w-full bg-[#fdfaf6] py-16 lg:py-12 scroll-mt-20">
       <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8">
 
         {/* Section Header */}

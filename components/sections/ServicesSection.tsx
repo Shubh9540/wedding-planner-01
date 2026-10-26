@@ -12,11 +12,19 @@ const renderIcon = (iconName: string) => {
   }
 };
 
-export const ServicesSection = ({ data, hideButton }: { data?: ServicesData; hideButton?: boolean }) => {
+export const ServicesSection = ({ 
+  data, 
+  hideButton, 
+  onSelectService 
+}: { 
+  data?: ServicesData; 
+  hideButton?: boolean; 
+  onSelectService?: (service: any) => void; 
+}) => {
   if (!data) return null;
 
   return (
-    <section className="w-full py-20 lg:py-12 bg-[#faf7f2] relative">
+    <section id="services" className="w-full py-20 lg:py-12 bg-[#faf7f2] relative scroll-mt-20">
       <div className="max-w-[1250px] mx-auto px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
@@ -55,10 +63,10 @@ export const ServicesSection = ({ data, hideButton }: { data?: ServicesData; hid
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {data.services.map((service) => (
-            <Link
-              href={service.url}
+            <div
               key={service.id}
-              className="flex flex-col relative rounded-[20px] overflow-hidden h-[420px] group shadow-sm hover:shadow-xl transition-all duration-300"
+              onClick={() => onSelectService && onSelectService(service)}
+              className="flex flex-col relative rounded-[20px] overflow-hidden h-[420px] group shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer"
             >
               {/* Background Image */}
               <div className="absolute inset-0 w-full h-[320px]">
@@ -76,12 +84,15 @@ export const ServicesSection = ({ data, hideButton }: { data?: ServicesData; hid
                   {renderIcon(service.icon)}
                 </div>
 
-                <h3 className="text-2xl font-serif text-[var(--color-primary)] font-bold transition-colors group-hover:text-[var(--color-accent-muted)]">
+                <h3 className="text-2xl font-serif text-[var(--color-primary)] font-bold transition-colors group-hover:text-[var(--color-accent-muted)] text-center">
                   {service.title}
                 </h3>
                 <div className="w-10 h-px bg-[var(--color-accent-light)] mt-4 transition-all duration-300 group-hover:w-16" />
+                <span className="text-[11px] uppercase tracking-wider text-[var(--color-accent-muted)] font-semibold mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  View Details &rarr;
+                </span>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
 

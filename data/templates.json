@@ -235,37 +235,37 @@
                 {
                   "id": "nl-home",
                   "label": "Home",
-                  "url": "/"
+                  "url": "#home"
                 },
                 {
                   "id": "nl-about",
                   "label": "About Us",
-                  "url": "/about"
+                  "url": "#about"
                 },
                 {
                   "id": "nl-services",
                   "label": "Our Services",
-                  "url": "/services"
+                  "url": "#services"
                 },
                 {
                   "id": "nl-gallery",
                   "label": "Gallery",
-                  "url": "/gallery"
+                  "url": "#gallery"
                 },
                 {
                   "id": "nl-faq",
                   "label": "FAQ",
-                  "url": "/faq"
+                  "url": "#faq"
                 },
                 {
                   "id": "nl-contact",
                   "label": "Contact Us",
-                  "url": "/contact"
+                  "url": "#contact"
                 }
               ],
               "contactButton": {
-                "text": "Get a Quote ->",
-                "url": "/quote"
+                "text": "Contact Us ->",
+                "url": "#contact"
               }
             }
           }

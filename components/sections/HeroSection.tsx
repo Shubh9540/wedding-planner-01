@@ -6,7 +6,7 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
   if (!data) return null;
 
   return (
-    <section className="relative flex min-h-[480px] w-full items-center bg-[#faf7f2] overflow-hidden lg:min-h-[580px]">
+    <section id="home" className="relative flex min-h-[480px] w-full items-center bg-[#faf7f2] overflow-hidden lg:min-h-[580px] scroll-mt-20">
       {/* Background Image Container */}
       <div className="absolute right-0 top-0 h-full w-full lg:w-[70%]">
         <img 

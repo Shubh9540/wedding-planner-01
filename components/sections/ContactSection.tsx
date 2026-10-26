@@ -7,7 +7,7 @@ export const ContactSection = ({ data }: { data?: ContactData }) => {
   if (!data) return null;
 
   return (
-    <section className="w-full bg-[#fdfaf6]">
+    <section id="contact" className="w-full bg-[#fdfaf6] scroll-mt-20">
       <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 py-16 lg:py-20">
         
         {/* Header */}

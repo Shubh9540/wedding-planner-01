@@ -62,7 +62,7 @@ export const AboutUsSection = ({ data, hideButton }: { data?: AboutUsData; hideB
   if (!data) return null;
 
   return (
-    <section className="w-full py-20 lg:py-12 bg-[#faf7f2] relative overflow-hidden">
+    <section id="about" className="w-full py-20 lg:py-12 bg-[#faf7f2] relative overflow-hidden scroll-mt-20">
       <div className="max-w-[1250px] mx-auto px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
         {/* Left Side: Images */}
