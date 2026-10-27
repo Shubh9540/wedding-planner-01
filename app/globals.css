@@ -20,8 +20,11 @@
   --color-border: #e3ebe6;
 }
 
+html,
 body {
   color: var(--color-text);
   background-color: var(--color-bg-main);
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }

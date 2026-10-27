@@ -10,21 +10,21 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
   if (!data || !data.faqs) return null;
 
   return (
-    <section id="faq" className="w-full bg-[#fdfaf6] py-20 lg:py-12 overflow-hidden scroll-mt-20">
+    <section id="faq" className="w-full bg-[#faf7f2] py-20 lg:py-12 overflow-hidden scroll-mt-20">
       <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
 
           {/* Left Column - Image */}
           <div className="w-full lg:w-[40%] relative">
             {/* The decorative border */}
-            <div className="absolute -inset-4 border border-[#d6aeb9] rounded-tl-[150px] md:rounded-tl-[250px] rounded-br-md rounded-tr-md rounded-bl-md pointer-events-none hidden md:block">
+            <div className="absolute -inset-4 border border-[var(--color-accent-light)] rounded-tl-[150px] md:rounded-tl-[250px] rounded-br-md rounded-tr-md rounded-bl-md pointer-events-none hidden md:block">
               {/* Star icon on the right edge center */}
-              <div className="absolute top-1/2 -right-3 -translate-y-1/2 text-[#d6aeb9] text-xl bg-[#fdfaf6] px-1">
+              <div className="absolute top-1/2 -right-3 -translate-y-1/2 text-[var(--color-accent-light)] text-xl bg-[#faf7f2] px-1">
                 ✦
               </div>
             </div>
 
-            <div className="relative w-full aspect-[3/4] rounded-tl-[150px] md:rounded-tl-[250px] rounded-br-md rounded-tr-md rounded-bl-md overflow-hidden shadow-lg">
+            <div className="relative w-full aspect-[3/4] rounded-tl-[150px] md:rounded-tl-[250px] rounded-br-md rounded-tr-md rounded-bl-md overflow-hidden shadow-lg border border-[var(--color-border)]">
               <img
                 src={data.image}
                 alt="FAQ"
@@ -37,14 +37,14 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
           <div className="w-full lg:w-[60%] pt-4 md:pt-8">
             {/* Header */}
             <div className="mb-8">
-              <div className="flex items-center gap-4 text-[#a37953] text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <div className="flex items-center gap-4 text-[var(--color-accent-light)] text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-4">
                 {data.subtitle}
-                <span className="w-12 md:w-20 h-px bg-[#a37953]"></span>
+                <span className="w-12 md:w-20 h-px bg-[var(--color-accent-light)]"></span>
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#592331] mb-4 font-serif leading-tight">
-                {data.title1} <span className="text-[#d6aeb9] font-normal">{data.title2}</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[var(--color-primary)] mb-4 font-serif leading-tight">
+                {data.title1} <span className="text-[var(--color-accent-muted)] font-normal">{data.title2}</span>
               </h2>
-              <p className="text-gray-500 text-sm md:text-xs max-w-2xl leading-relaxed">
+              <p className="text-[var(--color-text-light)] text-sm md:text-xs max-w-2xl leading-relaxed">
                 {data.description}
               </p>
             </div>
@@ -59,12 +59,12 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
                     <button
                       onClick={() => setOpenId(isOpen ? null : faq.id)}
                       className={`w-full flex items-center justify-between p-3.5 px-5 text-left transition-colors duration-300 ${isOpen
-                        ? 'bg-[#7f183c] text-white rounded-t-md'
-                        : 'bg-[#f7ecef] text-[#3f292b] hover:bg-[#f0e0e4] rounded-md'
+                        ? 'bg-[var(--color-accent-muted)] text-white rounded-t-md'
+                        : 'bg-white text-[var(--color-primary)] hover:bg-[#eaf1ec] rounded-md border border-[var(--color-border)]'
                         }`}
                     >
                       <div className="flex items-center gap-4">
-                        <div className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${isOpen ? 'bg-white text-[#7f183c]' : 'bg-[#e8cdd2] text-[#3f292b]'
+                        <div className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${isOpen ? 'bg-white text-[var(--color-accent-muted)]' : 'bg-[var(--color-border)] text-[var(--color-primary)]'
                           }`}>
                           {isOpen ? <FaMinus className="text-[10px]" /> : <FaPlus className="text-[10px]" />}
                         </div>
@@ -76,12 +76,12 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
                     </button>
 
                     <div
-                      className={`grid transition-all duration-300 ease-in-out bg-[#f4ebe9] rounded-b-md ${
-                        isOpen ? 'grid-rows-[1fr] opacity-100 border-t border-[#8c2a4c]' : 'grid-rows-[0fr] opacity-0 border-t border-transparent'
+                      className={`grid transition-all duration-300 ease-in-out bg-white rounded-b-md ${
+                        isOpen ? 'grid-rows-[1fr] opacity-100 border border-t-0 border-[var(--color-accent-muted)]' : 'grid-rows-[0fr] opacity-0 border-t border-transparent'
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <div className="text-gray-600 text-xs md:text-[13px] leading-relaxed p-5">
+                        <div className="text-[var(--color-text)] text-xs md:text-[13px] leading-relaxed p-5">
                           {faq.answer}
                         </div>
                       </div>

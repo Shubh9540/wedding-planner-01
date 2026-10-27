@@ -1,7 +1,7 @@
 import React from 'react';
 import { ServicesData } from '@/types/templates.types';
 import Link from 'next/link';
-import { FaRing, FaGlassCheers, FaUsers } from 'react-icons/fa';
+import { FaRing, FaGlassCheers, FaUsers, FaArrowRight } from 'react-icons/fa';
 
 const renderIcon = (iconName: string) => {
   switch (iconName) {
@@ -13,13 +13,9 @@ const renderIcon = (iconName: string) => {
 };
 
 export const ServicesSection = ({ 
-  data, 
-  hideButton, 
-  onSelectService 
+  data 
 }: { 
   data?: ServicesData; 
-  hideButton?: boolean; 
-  onSelectService?: (service: any) => void; 
 }) => {
   if (!data) return null;
 
@@ -47,7 +43,6 @@ export const ServicesSection = ({
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-px bg-[var(--color-accent-light)]/50" />
             <div className="text-[var(--color-accent-light)] text-xl">
-              {/* Simple Lotus-like SVG */}
               <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M256 32c-35.34 0-64 71.63-64 160 0 10.55 1.11 20.84 3.19 30.81-42.58-15.01-83.33-14.86-116.3 3.63-38.3 21.49-43.25 61.64-44.53 79.5 24.16-9.15 62.48-11.23 99.4 16.53-29.23 37.38-23.77 75.35-15.69 99.72 23.36 12.03 62.06 18.06 100.82-12.75 8.1 4.54 17.65 8.5 28.32 11.66 2.87 25.13 5.48 48.06 8.79 58.9h0.01c3.2-10.84 5.81-33.77 8.79-58.9 10.66-3.16 20.22-7.11 28.31-11.66 38.76 30.81 77.46 24.78 100.82 12.75 8.08-24.37 13.54-62.34-15.69-99.72 36.92-27.76 75.24-25.68 99.4-16.53-1.28-17.86-6.23-58.01-44.53-79.5-32.97-18.49-73.72-18.64-116.3-3.63 2.08-9.97 3.19-20.26 3.19-30.81 0-88.37-28.66-160-64-160z"></path>
               </svg>
@@ -60,38 +55,68 @@ export const ServicesSection = ({
           </p>
         </div>
 
-        {/* Services Grid */}
+        {/* Services Grid with Hover Overlay */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {data.services.map((service) => (
             <div
               key={service.id}
-              onClick={() => onSelectService && onSelectService(service)}
-              className="flex flex-col relative rounded-[20px] overflow-hidden h-[420px] group shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer"
+              className="flex flex-col relative rounded-[20px] overflow-hidden h-[430px] group shadow-sm hover:shadow-2xl transition-all duration-500 bg-white border border-[var(--color-border)]"
             >
-              {/* Background Image */}
-              <div className="absolute inset-0 w-full h-[320px]">
+              {/* Background Full Image */}
+              <div className="absolute inset-0 w-full h-full">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
+                {/* Subtle base vignette */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary)]/80 via-transparent to-transparent group-hover:opacity-0 transition-opacity duration-300" />
               </div>
 
-              {/* Bottom White Overlay */}
-              <div className="absolute bottom-0 left-0 w-full bg-[#fefbf6] rounded-t-[30px] flex flex-col items-center pt-9 pb-8 px-6 transition-transform duration-300">
+              {/* Default Bottom Card Info (slides down slightly or fades on hover) */}
+              <div className="absolute bottom-0 left-0 w-full bg-white/95 backdrop-blur-sm rounded-t-[30px] flex flex-col items-center pt-8 pb-7 px-6 transition-all duration-400 group-hover:translate-y-4 group-hover:opacity-0 z-10 border-t border-[var(--color-border)]">
                 {/* Icon Badge */}
-                <div className="absolute -top-7 w-14 h-14 bg-[var(--color-accent)] rounded-full border-4 border-[#fefbf6] flex items-center justify-center text-white text-xl shadow-md transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
+                <div className="absolute -top-7 w-14 h-14 bg-[var(--color-accent)] rounded-full border-4 border-[#faf7f2] flex items-center justify-center text-white text-xl shadow-md">
                   {renderIcon(service.icon)}
                 </div>
 
-                <h3 className="text-2xl font-serif text-[var(--color-primary)] font-bold transition-colors group-hover:text-[var(--color-accent-muted)] text-center">
+                <h3 className="text-2xl font-serif text-[var(--color-primary)] font-bold text-center mt-1">
                   {service.title}
                 </h3>
-                <div className="w-10 h-px bg-[var(--color-accent-light)] mt-4 transition-all duration-300 group-hover:w-16" />
-                <span className="text-[11px] uppercase tracking-wider text-[var(--color-accent-muted)] font-semibold mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  View Details &rarr;
+                <div className="w-12 h-px bg-[var(--color-accent-light)] mt-3" />
+                <span className="text-xs uppercase tracking-wider text-[var(--color-accent-muted)] font-semibold mt-2">
+                  Hover to explore
                 </span>
               </div>
+
+              {/* Full Hover Overlay with Content and Contact Us CTA */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary)] via-[var(--color-primary)]/90 to-[var(--color-primary)]/75 opacity-0 group-hover:opacity-100 transition-all duration-500 p-8 flex flex-col justify-between items-center text-center z-20 backdrop-blur-[2px]">
+                {/* Top Badge */}
+                <div className="w-14 h-14 rounded-full bg-[var(--color-accent-muted)] border-2 border-[var(--color-accent-light)] flex items-center justify-center text-white text-xl shadow-lg transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  {renderIcon(service.icon)}
+                </div>
+
+                {/* Middle Content */}
+                <div className="flex flex-col items-center my-auto transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                  <h3 className="text-2xl sm:text-3xl font-serif text-white font-bold mb-3">
+                    {service.title}
+                  </h3>
+                  <div className="w-12 h-px bg-[var(--color-accent-light)] mb-4" />
+                  <p className="text-gray-200 text-sm leading-relaxed max-w-xs font-serif">
+                    {service.description || 'Full-service luxury planning, bespoke venue styling, gourmet catering coordination, and dedicated on-site directors.'}
+                  </p>
+                </div>
+
+                {/* Bottom Contact Us Button (Smooth Scroll to #contact) */}
+                <Link
+                  href="#contact"
+                  className="inline-flex items-center justify-center gap-2 bg-[var(--color-accent-light)] hover:bg-white text-[var(--color-primary)] font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 shadow-md hover:shadow-xl transform translate-y-4 group-hover:translate-y-0 cursor-pointer"
+                >
+                  Contact Us
+                  <FaArrowRight className="text-xs" />
+                </Link>
+              </div>
+
             </div>
           ))}
         </div>

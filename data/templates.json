@@ -1,18 +1,15 @@
 {
   "common": {
     "globalUI": {
-      "loadingText": "Loading Data...",
-      "notFoundText": "Not Found"
+      "loadingText": "Loading WedBliss Experience...",
+      "notFoundText": "Page Not Found"
     },
     "Footer": {
-      "logoImage": "/main logo/logo.webp",
-      "logoAlt": "WedBliss Logo",
+      "logoImage": "/main logo/footer_logo.webp",
+      "logoAlt": "WedBliss Luxury Weddings",
       "brandTitle": "WedBliss",
-      "copyrightText": "Copyright © 2026 WedBliss. All rights reserved. Powered By Lestow",
-      "description": "Turning your special moments into unforgettable celebrations with creativity, care and perfection.",
-      "hoursTitle": "Working Hours",
-      "hoursDays": "Mon - Sat:",
-      "hours": "9:00 AM - 7:00 PM\nSunday: Closed",
+      "copyrightText": "Copyright © 2026 WedBliss Luxury Wedding & Event Planning. All rights reserved.",
+      "description": "Crafting bespoke wedding celebrations, lavish receptions, and everlasting memories with timeless elegance, passion, and flawless execution.",
       "socialLinks": [
         {
           "id": "fs1",
@@ -39,198 +36,71 @@
         {
           "id": "ql1",
           "label": "Home",
-          "url": "/"
+          "url": "#home"
         },
         {
           "id": "ql2",
           "label": "About Us",
-          "url": "/about"
+          "url": "#about"
         },
         {
           "id": "ql3",
           "label": "Our Services",
-          "url": "/services"
+          "url": "#services"
         },
         {
           "id": "ql4",
           "label": "Gallery",
-          "url": "/gallery"
+          "url": "#gallery"
         },
         {
           "id": "ql5",
           "label": "FAQ",
-          "url": "/faq"
+          "url": "#faq"
         },
         {
           "id": "ql6",
           "label": "Contact Us",
-          "url": "/contact"
+          "url": "#contact"
         }
       ],
       "servicesLinks": [
         {
           "id": "sl1",
-          "label": "Wedding Planning",
-          "url": "/services/wedding"
+          "label": "Bespoke Wedding Planning",
+          "url": "#services"
         },
         {
           "id": "sl2",
-          "label": "Birthday Party",
-          "url": "/services/birthday"
+          "label": "Exclusive Private Soirees",
+          "url": "#services"
         },
         {
           "id": "sl3",
-          "label": "Corporate Event",
-          "url": "/services/corporate"
+          "label": "Grand Corporate Galas",
+          "url": "#services"
         },
         {
           "id": "sl4",
-          "label": "Private Party",
-          "url": "/services/private-party"
-        },
-        {
-          "id": "sl5",
-          "label": "Engagement Ceremony",
-          "url": "/services/engagement"
-        },
-        {
-          "id": "sl6",
-          "label": "Event Decoration",
-          "url": "/services/decoration"
+          "label": "Destination Celebrations",
+          "url": "#services"
         }
       ],
       "contactInfo": {
         "address": "123 Main St, New York, NY, USA",
         "phone": "+1 000000000",
         "email": "info@xyz.com"
-      },
-      "instagram": [
-        "/service/1.jpg",
-        "/service/2.jpg",
-        "/service/3.jpg",
-        "/service/4.jpg",
-        "/service/5.jpg",
-        "/service/6.jpg"
-      ],
-      "faqLinks": [
-        {
-          "id": "fq1",
-          "label": "How Can I Set An Event?",
-          "url": "/faq"
-        },
-        {
-          "id": "fq2",
-          "label": "What Venues Do You Use?",
-          "url": "/faq"
-        },
-        {
-          "id": "fq3",
-          "label": "Event Catalogue",
-          "url": "/faq"
-        },
-        {
-          "id": "fq4",
-          "label": "Shipping & Delivery",
-          "url": "/faq"
-        },
-        {
-          "id": "fq5",
-          "label": "What's your dream job?",
-          "url": "/faq"
-        }
-      ]
-    },
-    "aboutBreadcrumb": {
-      "title": "ABOUT US",
-      "subtitle": "I Do What I Love",
-      "bgImage": "/main logo/breadcrumb.webp",
-      "paths": [
-        {
-          "label": "Home",
-          "url": "/"
-        },
-        {
-          "label": "About Us"
-        }
-      ]
-    },
-    "servicesBreadcrumb": {
-      "title": "Our Services",
-      "paths": [
-        {
-          "label": "Home",
-          "url": "/"
-        },
-        {
-          "label": "Services"
-        }
-      ]
-    },
-    "contactBreadcrumb": {
-      "title": "Contact Us",
-      "paths": [
-        {
-          "label": "Home",
-          "url": "/"
-        },
-        {
-          "label": "Contact Us"
-        }
-      ]
-    },
-    "enquiryBreadcrumb": {
-      "title": "Enquiry Now",
-      "paths": [
-        {
-          "label": "Home",
-          "url": "/"
-        },
-        {
-          "label": "Enquiry Now"
-        }
-      ]
+      }
     }
   },
   "categories": {
     "WedBliss": {
       "sections": {
-        "TopBar": {
-          "variants": {
-            "WedBlissTopBar1": {
-              "phoneLabel": "Call Us :",
-              "phoneValue": "+1 000000000",
-              "emailValue": "info@xyz.com",
-              "followLabel": "Follow Us On :",
-              "socialLinks": [
-                {
-                  "id": "tb-fb",
-                  "icon": "FaFacebookF",
-                  "url": "https://www.facebook.com"
-                },
-                {
-                  "id": "tb-ig",
-                  "icon": "FaXTwitter",
-                  "url": "https://x.com"
-                },
-                {
-                  "id": "tb-in",
-                  "icon": "FaInstagram",
-                  "url": "https://www.instagram.com"
-                },
-                {
-                  "id": "tb-yt",
-                  "icon": "FaLinkedinIn",
-                  "url": "https://www.linkedin.com"
-                }
-              ]
-            }
-          }
-        },
         "Header": {
           "variants": {
             "WedBlissHeader1": {
-              "logo": "/main logo/logo.webp",
-              "logoAlt": "WedBliss Logo",
+              "logo": "/main logo/header_logo.webp",
+              "logoAlt": "WedBliss Luxury Logo",
               "navLinks": [
                 {
                   "id": "nl-home",
@@ -256,11 +126,6 @@
                   "id": "nl-faq",
                   "label": "FAQ",
                   "url": "#faq"
-                },
-                {
-                  "id": "nl-contact",
-                  "label": "Contact Us",
-                  "url": "#contact"
                 }
               ],
               "contactButton": {
@@ -273,101 +138,81 @@
         "Hero": {
           "variants": {
             "WedBlissHero1": {
-              "subtitle": "YOUR CELEBRATION PRESENTS",
-              "title1": "LET'S HAVE A",
-              "title2": "PARTY!",
-              "description": "Planning a Wedding, Proposal, Corporate or Event in our busy city is not so easy, and it takes skills (and time) to make it all look easy-going.",
-              "image1": "/banner/banner.webp",
-              "button1": {
-                "text": "Get a Quote >",
-                "url": "/quote"
-              },
-              "button2": {
-                "text": "More Gallery >",
-                "url": "/gallery"
-              }
+              "subtitle": "CURATING TIMELESS CELEBRATIONS",
+              "title1": "CELEBRATE YOUR",
+              "title2": "LOVE STORY",
+              "description": "From intimate seaside vows to opulent palace receptions, WedBliss orchestrates breathtaking, stress-free weddings tailored to your distinct signature style.",
+              "image1": "/other/hero_banner.webp"
             }
           }
         },
         "AboutUs": {
           "variants": {
             "WedBlissAboutUs1": {
-              "subtitle": "ABOUT US",
-              "title1": "About Our",
-              "title2": "WedBliss",
-              "description1": "With our passion, knowledge, creative flair and inspiration, we are dedicated in helping you to achieve your dream wedding day or special event within your budget.",
-              "description2": "Our wedding planning and event coordination services are designed for every couple, no matter the size of your celebration. From intimate gatherings to grand destination weddings, we create memorable experiences with personalized planning, beautiful décor and seamless execution.",
-              "extraContent": [
-                {
-                  "id": "e1",
-                  "title": "Our Mission",
-                  "description": "To create unforgettable memories through meticulous planning and a personal touch."
-                },
-                {
-                  "id": "e2",
-                  "title": "Our Vision",
-                  "description": "Becoming the world's leading wedding and event planner by offering world-class services."
-                }
-              ],
+              "subtitle": "OUR HERITAGE & PASSION",
+              "title1": "Elegance In Every",
+              "title2": "Celebration",
+              "description1": "At WedBliss, we believe your special day should be as effortless as it is extraordinary. Every floral arrangement, lighting hue, and culinary detail is thoughtfully composed.",
+              "description2": "With over a decade of luxury event management across premier venues worldwide, our dedicated concierge team handles every chapter of your journey so you can simply cherish every precious moment.",
               "stats": [
                 {
                   "id": "s1",
-                  "number": "50",
-                  "suffix": "K+",
-                  "text": "Happy Clients",
+                  "number": "650",
+                  "suffix": "+",
+                  "text": "Couples Celebrated",
                   "icon": "FaUsers"
                 },
                 {
                   "id": "s2",
-                  "number": "15",
+                  "number": "12",
                   "suffix": "Years",
-                  "text": "Experience",
+                  "text": "Luxury Experience",
                   "icon": "FaRegCalendarAlt"
                 },
                 {
                   "id": "s3",
-                  "number": "70",
-                  "suffix": "K+",
-                  "text": "Events Planned",
+                  "number": "99",
+                  "suffix": "%",
+                  "text": "Client Satisfaction",
                   "icon": "FaRegCheckCircle"
                 }
               ],
-              "imageMain": "/about/about_big.webp",
-              "imageSmall": "/about/about_small.webp"
+              "imageMain": "/other/about_big.webp",
+              "imageSmall": "/other/about_small.webp"
             }
           }
         },
         "Services": {
           "variants": {
             "WedBlissServices1": {
-              "subtitle": "OUR SERVICES",
-              "title1": "Provide Best",
-              "title2": "Services",
-              "description": "We create memorable experiences with our professional planning and personalized services for every special occasion.",
+              "subtitle": "SIGNATURE OFFERINGS",
+              "title1": "Exquisite Event",
+              "title2": "Curation",
+              "description": "Each celebration is unique. Explore our specialized wedding and event services designed to create memories that linger for a lifetime.",
               "services": [
                 {
                   "id": "s1",
-                  "title": "Wedding",
-                  "description": "",
-                  "image": "/service/weeding.webp",
+                  "title": "Grand Weddings",
+                  "description": "Comprehensive destination and royal wedding design, venue scouting, couture decor, and day-of orchestration.",
+                  "image": "/other/service_wedding.webp",
                   "icon": "FaRing",
-                  "url": "/services/wedding"
+                  "url": "#services"
                 },
                 {
                   "id": "s2",
-                  "title": "Private Party",
-                  "description": "",
-                  "image": "/service/private party.webp",
+                  "title": "Private Soirees",
+                  "description": "Intimate anniversaries, milestone birthdays, and engagement dinners curated with bespoke charm and fine culinary flair.",
+                  "image": "/other/service_private.webp",
                   "icon": "FaGlassCheers",
-                  "url": "/services/private-party"
+                  "url": "#services"
                 },
                 {
                   "id": "s3",
-                  "title": "Corporate Party",
-                  "description": "",
-                  "image": "/service/corporate party.webp",
+                  "title": "Corporate Galas",
+                  "description": "High-profile award nights, luxury product unveils, and executive summits executed with impeccable precision.",
+                  "image": "/other/service_corporate.webp",
                   "icon": "FaUsers",
-                  "url": "/services/corporate"
+                  "url": "#services"
                 }
               ]
             }
@@ -376,1864 +221,66 @@
         "WhatWeDo": {
           "variants": {
             "WedBlissWhatWeDo1": {
-              "subtitle": "WHAT WE DO",
-              "title1": "Get Premium",
-              "title2": "Our",
-              "title3": "Services",
-              "description": "We have a huge range of suppliers and contacts in the industry that work closely with us to ensure you get the perfect event experience.",
-              "image": "/about/what we do.webp",
+              "subtitle": "THE WEDBLISS STANDARD",
+              "title1": "Flawless Execution,",
+              "title2": "Artful",
+              "title3": "Detailing",
+              "description": "We partner with elite international suppliers, award-winning florists, and Michelin-inspired chefs to ensure every dimension of your event dazzles.",
+              "image": "/other/what_we_do.webp",
               "features": [
                 {
                   "id": "p1",
                   "icon": "FaBirthdayCake",
-                  "title": "Catering & Decor",
-                  "description": "Delicious food and stunning decor to create the perfect ambiance.",
-                  "url": "/services/catering"
+                  "title": "Haute Cuisine & Decor",
+                  "description": "Sensory dining experiences paired with enchanting floral canopies and handcrafted table scapes."
                 },
                 {
                   "id": "p2",
                   "icon": "FaMapMarkedAlt",
-                  "title": "Venue Selections",
-                  "description": "We help you find the ideal venue that matches your style and budget.",
-                  "url": "/services/venues"
+                  "title": "Charming Venues",
+                  "description": "Exclusive access to private villas, heritage castles, and sun-kissed coastlines."
                 }
               ]
             }
           }
         },
-        "ServiceDetail": {
+        "Gallery": {
           "variants": {
-            "wedding": {
-              "id": "wedding",
-              "title1": "Wedding",
-              "title2": "Planning",
-              "description": "Your wedding is more than just an event — it's a beautiful journey of love, togetherness, and new beginnings. We create magical wedding experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/weeding.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
+            "WedBlissGallery1": {
+              "subtitle": "PORTFOLIO OF WONDER",
+              "title1": "Unforgettable",
+              "title2": "Memories",
+              "description": "A glimpse into the magical celebrations, heartfelt laughter, and timeless romances we have had the honor to orchestrate.",
+              "images": [
                 {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
+                  "id": "gal1",
+                  "image": "/other/gallery_1.webp",
+                  "alt": "Luxury Wedding Mandap & Floral Arch"
                 },
                 {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
+                  "id": "gal2",
+                  "image": "/other/gallery_2.webp",
+                  "alt": "Intimate Candlelit Dining Experience"
                 },
                 {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
+                  "id": "gal3",
+                  "image": "/other/gallery_3.webp",
+                  "alt": "Bespoke Dessert & Champagne Table"
                 },
                 {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
+                  "id": "gal4",
+                  "image": "/other/gallery_4.webp",
+                  "alt": "Grand Ballroom Ambient Production"
                 },
                 {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
+                  "id": "gal5",
+                  "image": "/other/gallery_5.webp",
+                  "alt": "Whimsical Celebration Styling"
                 },
                 {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "water-heater": {
-              "id": "water-heater",
-              "subtitle": "Our Service",
-              "title1": "Water",
-              "title2": "Heater Services",
-              "description": "Installation, repair and maintenance of all types of water heaters to ensure a continuous supply of hot water.",
-              "imageMain": "/service/5.jpg",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiShield",
-                  "title": "Durable Installation"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiSettings",
-                  "title": "Quality Materials"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiClock",
-                  "title": "On-Time Completion"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiUsers",
-                  "title": "Experienced Technicians"
-                }
-              ],
-              "overviewTitle": "Service Overview",
-              "overviewText": [
-                "Installation, repair and maintenance of all types of water heaters to ensure a continuous supply of hot water.",
-                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your wedbliss system running smoothly for years to come."
-              ],
-              "overviewImage": "/service/5.jpg",
-              "processTitle": "Our Process",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Site Inspection",
-                  "description": "We assess your wedbliss requirements and recommend the best solution."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Planning & Design",
-                  "description": "Detailed planning to ensure a safe and efficient installation process."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Installation",
-                  "description": "Our experts install pipes using quality materials and proven techniques."
-                },
-                {
-                  "id": "p4",
-                  "number": "04",
-                  "title": "Testing & Support",
-                  "description": "We test the system for leaks and performance, and provide ongoing support."
-                }
-              ],
-              "faqTitle": "Frequently Asked Questions",
-              "faqs": [
-                {
-                  "id": "q1",
-                  "question": "What types of pipes do you install?",
-                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local wedbliss codes."
-                },
-                {
-                  "id": "q2",
-                  "question": "How long does the installation process take?",
-                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
-                },
-                {
-                  "id": "q3",
-                  "question": "Do you provide a warranty on installation?",
-                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
-                },
-                {
-                  "id": "q4",
-                  "question": "Can you handle both residential and commercial projects?",
-                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
-                }
-              ],
-              "sidebar": {
-                "quoteForm": {
-                  "title": "Get a Free Quote",
-                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
-                  "buttonText": "Enquire Now ->",
-                  "servicesList": [
-                    "Pipe Installation",
-                    "Leak Repairs",
-                    "Drain Cleaning",
-                    "Water Heaters",
-                    "Bathroom WedBliss",
-                    "Emergency WedBliss"
-                  ]
-                },
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "s1",
-                      "label": "WedBliss Installation",
-                      "url": "/services/wedbliss-installation"
-                    },
-                    {
-                      "id": "s2",
-                      "label": "Leak Detection Services",
-                      "url": "/services/leak-detection"
-                    },
-                    {
-                      "id": "s3",
-                      "label": "Pipe & Drain Cleaning",
-                      "url": "/services/pipe-drain-cleaning"
-                    },
-                    {
-                      "id": "s4",
-                      "label": "General WedBliss Repair",
-                      "url": "/services/general-repair"
-                    },
-                    {
-                      "id": "s5",
-                      "label": "Water Heater Services",
-                      "url": "/services/water-heater"
-                    },
-                    {
-                      "id": "s6",
-                      "label": "Bathroom Fixture Installation",
-                      "url": "/services/bathroom-fixture"
-                    }
-                  ]
-                }
-              }
-            },
-            "bathroom-fixture": {
-              "id": "bathroom-fixture",
-              "subtitle": "Our Service",
-              "title1": "Bathroom",
-              "title2": "Fixture Installation",
-              "description": "We install and repair sinks, faucets, toilets, showers and other bathroom fixtures with expertise and care.",
-              "imageMain": "/service/6.jpg",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiShield",
-                  "title": "Durable Installation"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiSettings",
-                  "title": "Quality Materials"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiClock",
-                  "title": "On-Time Completion"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiUsers",
-                  "title": "Experienced Technicians"
-                }
-              ],
-              "overviewTitle": "Service Overview",
-              "overviewText": [
-                "We install and repair sinks, faucets, toilets, showers and other bathroom fixtures with expertise and care.",
-                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your wedbliss system running smoothly for years to come."
-              ],
-              "overviewImage": "/service/6.jpg",
-              "processTitle": "Our Process",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Site Inspection",
-                  "description": "We assess your wedbliss requirements and recommend the best solution."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Planning & Design",
-                  "description": "Detailed planning to ensure a safe and efficient installation process."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Installation",
-                  "description": "Our experts install pipes using quality materials and proven techniques."
-                },
-                {
-                  "id": "p4",
-                  "number": "04",
-                  "title": "Testing & Support",
-                  "description": "We test the system for leaks and performance, and provide ongoing support."
-                }
-              ],
-              "faqTitle": "Frequently Asked Questions",
-              "faqs": [
-                {
-                  "id": "q1",
-                  "question": "What types of pipes do you install?",
-                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local wedbliss codes."
-                },
-                {
-                  "id": "q2",
-                  "question": "How long does the installation process take?",
-                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
-                },
-                {
-                  "id": "q3",
-                  "question": "Do you provide a warranty on installation?",
-                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
-                },
-                {
-                  "id": "q4",
-                  "question": "Can you handle both residential and commercial projects?",
-                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
-                }
-              ],
-              "sidebar": {
-                "quoteForm": {
-                  "title": "Get a Free Quote",
-                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
-                  "buttonText": "Enquire Now ->",
-                  "servicesList": [
-                    "Pipe Installation",
-                    "Leak Repairs",
-                    "Drain Cleaning",
-                    "Water Heaters",
-                    "Bathroom WedBliss",
-                    "Emergency WedBliss"
-                  ]
-                },
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "s1",
-                      "label": "WedBliss Installation",
-                      "url": "/services/wedbliss-installation"
-                    },
-                    {
-                      "id": "s2",
-                      "label": "Leak Detection Services",
-                      "url": "/services/leak-detection"
-                    },
-                    {
-                      "id": "s3",
-                      "label": "Pipe & Drain Cleaning",
-                      "url": "/services/pipe-drain-cleaning"
-                    },
-                    {
-                      "id": "s4",
-                      "label": "General WedBliss Repair",
-                      "url": "/services/general-repair"
-                    },
-                    {
-                      "id": "s5",
-                      "label": "Water Heater Services",
-                      "url": "/services/water-heater"
-                    },
-                    {
-                      "id": "s6",
-                      "label": "Bathroom Fixture Installation",
-                      "url": "/services/bathroom-fixture"
-                    }
-                  ]
-                }
-              }
-            },
-            "birthday": {
-              "id": "birthday",
-              "title1": "Birthday",
-              "title2": "Party",
-              "description": "Your birthday party is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/weeding.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "corporate": {
-              "id": "corporate",
-              "title1": "Corporate",
-              "title2": "Event",
-              "description": "Your corporate event is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/corporate party.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "private-party": {
-              "id": "private-party",
-              "title1": "Private",
-              "title2": "Party",
-              "description": "Your private party is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/private party.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "engagement": {
-              "id": "engagement",
-              "title1": "Engagement",
-              "title2": "Ceremony",
-              "description": "Your engagement ceremony is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/weeding.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "decoration": {
-              "id": "decoration",
-              "title1": "Event",
-              "title2": "Decoration",
-              "description": "Your event decoration is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/private party.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "anniversary": {
-              "id": "anniversary",
-              "title1": "Anniversary",
-              "title2": "Celebration",
-              "description": "Your anniversary celebration is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/weeding.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "bridal-shower": {
-              "id": "bridal-shower",
-              "title1": "Bridal",
-              "title2": "Shower",
-              "description": "Your bridal shower is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/private party.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "baby-shower": {
-              "id": "baby-shower",
-              "title1": "Baby",
-              "title2": "Shower",
-              "description": "Your baby shower is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/weeding.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "product-launch": {
-              "id": "product-launch",
-              "title1": "Product",
-              "title2": "Launch",
-              "description": "Your product launch is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/corporate party.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "gala": {
-              "id": "gala",
-              "title1": "Gala",
-              "title2": "Dinner",
-              "description": "Your gala dinner is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/private party.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            },
-            "charity": {
-              "id": "charity",
-              "title1": "Charity",
-              "title2": "Event",
-              "description": "Your charity event is more than just an event — it's a beautiful journey. We create magical experiences with flawless planning, creative themes, and personalized details that reflect your unique story.",
-              "imageMain": "/service/weeding.webp",
-              "imageSmall1": "/service/private party.webp",
-              "imageSmall2": "/service/corporate party.webp",
-              "features": [
-                {
-                  "id": "f1",
-                  "icon": "FiHeart",
-                  "title": "Personalized Theme Planning"
-                },
-                {
-                  "id": "f2",
-                  "icon": "FiMapPin",
-                  "title": "Venue Selection & Management"
-                },
-                {
-                  "id": "f3",
-                  "icon": "FiStar",
-                  "title": "Decoration & Floral Arrangements"
-                },
-                {
-                  "id": "f4",
-                  "icon": "FiCamera",
-                  "title": "Photography & Videography"
-                },
-                {
-                  "id": "f5",
-                  "icon": "FiCoffee",
-                  "title": "Catering & Menu Planning"
-                },
-                {
-                  "id": "f6",
-                  "icon": "FiMusic",
-                  "title": "Entertainment & Artist Management"
-                },
-                {
-                  "id": "f7",
-                  "icon": "FiGift",
-                  "title": "Guest Hospitality"
-                },
-                {
-                  "id": "f8",
-                  "icon": "FiClipboard",
-                  "title": "On-site Coordination"
-                }
-              ],
-              "processTitle": "Our",
-              "processDescription": "We follow a client-centric approach to ensure every detail is thoughtfully planned and beautifully executed. From initial consultation to the final send-off, our team works closely with you to bring your dream wedding to life.",
-              "processSteps": [
-                {
-                  "id": "p1",
-                  "number": "01",
-                  "title": "Initial Consultation & Planning",
-                  "description": "We start with a comprehensive consultation to understand your vision, preferences, and budget. Our team then creates a detailed plan to ensure every aspect of your wedding is perfectly organized."
-                },
-                {
-                  "id": "p2",
-                  "number": "02",
-                  "title": "Design & Concept Development",
-                  "description": "Our creative team works on the theme, decor, and overall concept. We present you with mood boards and design layouts to visualize your special day before it happens."
-                },
-                {
-                  "id": "p3",
-                  "number": "03",
-                  "title": "Execution & On-Site Management",
-                  "description": "On the big day, our expert coordinators manage everything behind the scenes. From vendor coordination to timeline management, we ensure your event runs smoothly so you can enjoy every moment."
-                }
-              ],
-              "sidebar": {
-                "servicesList": {
-                  "title": "Our Services",
-                  "services": [
-                    {
-                      "id": "wedding",
-                      "label": "Wedding Planning",
-                      "url": "/services/wedding"
-                    },
-                    {
-                      "id": "corporate",
-                      "label": "Corporate Events",
-                      "url": "/services/corporate"
-                    },
-                    {
-                      "id": "parties",
-                      "label": "Parties & Celebrations",
-                      "url": "/services/parties"
-                    },
-                    {
-                      "id": "kids",
-                      "label": "Events for Kids",
-                      "url": "/services/kids"
-                    },
-                    {
-                      "id": "decor",
-                      "label": "Lighting & Decor",
-                      "url": "/services/decor"
-                    },
-                    {
-                      "id": "public",
-                      "label": "Public Events",
-                      "url": "/services/public"
-                    }
-                  ]
-                },
-                "contactCard": {
-                  "title": "Plan Your Special Event",
-                  "description": "Get in touch with our team to discuss your event requirements.",
-                  "phone": "+1 00000 00000",
-                  "email": "info@xyz.com",
-                  "address": "123 Main St, New York, NY, USA",
-                  "buttonText": "Contact Us ->",
-                  "bgImage": "/banner/banner.webp"
-                },
-                "whyChooseUsCard": {
-                  "title": "Why Choose Us?",
-                  "description": "We are committed to turning your vision into unforgettable celebrations with creativity, passion, and attention to detail.",
-                  "buttonText": "Know More ->",
-                  "bgImage": "/service/weeding.webp"
-                }
-              }
-            }
-          }
-        },
-        "Counter": {
-          "variants": {
-            "WedBlissCounter1": {
-              "bgImage": "/banner/ban1.jpg",
-              "items": [
-                {
-                  "id": "c1",
-                  "icon": "FaHeart",
-                  "number": 878,
-                  "label": "GOOD COMMENTS"
-                },
-                {
-                  "id": "c2",
-                  "icon": "FaCalendarAlt",
-                  "number": 175,
-                  "label": "FEATURED EVENTS"
-                },
-                {
-                  "id": "c3",
-                  "icon": "FaCrown",
-                  "number": 878,
-                  "label": "AWARD WINNING"
-                },
-                {
-                  "id": "c4",
-                  "icon": "FaUsers",
-                  "number": 125,
-                  "label": "HAPPY CLIENTS"
-                }
-              ]
-            }
-          }
-        },
-        "Team": {
-          "variants": {
-            "WedBlissTeam1": {
-              "subtitle": "MEET OUR TEAM",
-              "title1": "Planner Latest",
-              "title2": "Team",
-              "members": [
-                {
-                  "id": "tm1",
-                  "name": "Lenalee Crus",
-                  "role": "Graphic Designer",
-                  "image": "/team/team1.webp"
-                },
-                {
-                  "id": "tm2",
-                  "name": "Diana Aiden",
-                  "role": "Event Planner",
-                  "image": "/team/team2.webp"
-                },
-                {
-                  "id": "tm3",
-                  "name": "Jimmy Edward",
-                  "role": "Event Manager",
-                  "image": "/team/team3.webp"
+                  "id": "gal6",
+                  "image": "/other/gallery_6.webp",
+                  "alt": "Romantic Fairy-lit Garden Soiree"
                 }
               ]
             }
@@ -2242,505 +289,91 @@
         "Testimonials": {
           "variants": {
             "WedBlissTestimonials1": {
-              "subtitle": "Testimonials",
-              "title1": "What Our Clients Say",
-              "title2": "About Our WedBliss Services",
-              "description": "We take pride in delivering reliable wedbliss solutions and exceptional customer service. Here's what our valued clients have to say about their experience with us.",
+              "subtitle": "HEARTFELT WORDS",
+              "title1": "What Our Couples",
+              "title2": "Say About Us",
+              "description": "The greatest reward of our journey is the radiant smile of our brides, grooms, and esteemed hosts.",
               "testimonials": [
                 {
                   "id": "t1",
-                  "name": "Priya Mehta",
-                  "location": "Homeowner, Delhi",
-                  "quote": "The team did an amazing job at our home. Everything was spotless, and they were professional, polite and on time. Highly recommend their services!",
+                  "name": "Sophia & Alexander",
+                  "location": "Destination Wedding, Lake Como",
+                  "quote": "WedBliss transformed our dream into an absolute fairy tale. From the rehearsal dinner to the midnight fireworks, not a single detail went unnoticed. Truly world-class!",
                   "rating": 5,
-                  "avatar": "/team/team1.webp"
+                  "avatar": "/other/about_small.webp"
                 },
                 {
                   "id": "t2",
-                  "name": "Rohit Sharma",
-                  "location": "Business Owner, Noida",
-                  "quote": "We've been using their office cleaning services for over a year now. The quality, consistency and attention to detail are outstanding. Our workspace has never looked better!",
+                  "name": "Marcus & Elena",
+                  "location": "Garden Gala, New York",
+                  "quote": "Their poise, creativity, and calm reassurance throughout the planning months took all the stress off our shoulders. Our guests are still raving about the evening!",
                   "rating": 5,
-                  "avatar": "/team/team2.webp"
+                  "avatar": "/other/about_big.webp"
                 },
                 {
                   "id": "t3",
-                  "name": "Anjali Verma",
-                  "location": "Homeowner, Gurugram",
-                  "quote": "Excellent service! The staff was friendly, thorough and used safe, eco-friendly products. My home feels fresh and clean every time.",
+                  "name": "Dev & Alisha",
+                  "location": "Palace Wedding, Udaipur",
+                  "quote": "The floral installations and lighting were simply breathtaking. If you want a luxury celebration that feels deeply personal, WedBliss is incomparable.",
                   "rating": 5,
-                  "avatar": "/team/team3.webp"
+                  "avatar": "/other/about_small.webp"
                 },
                 {
                   "id": "t4",
-                  "name": "Neha Gupta",
-                  "location": "Homeowner, Pune",
-                  "quote": "The team did an amazing job at our home. Everything was spotless, and they were professional, polite and on time. Highly recommend their services!",
+                  "name": "Julian & Camille",
+                  "location": "Chateau Wedding, Provence",
+                  "quote": "Every single detail was executed with absolute perfection. Our guests from across the world were enchanted by the seamless coordination and warmth.",
                   "rating": 5,
-                  "avatar": "/team/team1.webp"
+                  "avatar": "/other/about_big.webp"
                 },
                 {
                   "id": "t5",
-                  "name": "Vikram Singh",
-                  "location": "Office Manager, Mumbai",
-                  "quote": "We've been using their office cleaning services for over a year now. The quality, consistency and attention to detail are outstanding. Our workspace has never looked better!",
+                  "name": "Rohan & Meera",
+                  "location": "Beachfront Vows, Goa",
+                  "quote": "From sunset pheras to the energetic after-party, WedBliss brought vibrant energy, flawless timing, and magnificent design to life.",
                   "rating": 5,
-                  "avatar": "/team/team2.webp"
+                  "avatar": "/other/about_small.webp"
                 },
                 {
                   "id": "t6",
-                  "name": "Ritu Sharma",
-                  "location": "Homeowner, Bangalore",
-                  "quote": "Excellent service! The staff was friendly, thorough and used safe, eco-friendly products. My home feels fresh and clean every time.",
+                  "name": "Oliver & Charlotte",
+                  "location": "Historic Estate, Cotswolds",
+                  "quote": "Working with WedBliss was effortless. They listened to our wildest ideas and turned them into an unforgettable weekend of celebration.",
                   "rating": 5,
-                  "avatar": "/team/team3.webp"
+                  "avatar": "/other/about_big.webp"
                 }
               ]
-            }
-          }
-        },
-        "contact": {
-          "variants": {
-            "WedBlissContact1": {
-              "subtitle": "Contact Us",
-              "title1": "Get In Touch",
-              "title2": "With Us",
-              "description": "Have a question, need a quote, or want to schedule a wedbliss service? Our team is here to help. Reach out to us through the form or using the contact details below.",
-              "contactInfo": {
-                "phoneTitle": "Call Us",
-                "phone": "+1 000000000",
-                "emailTitle": "Email Us",
-                "email": "info@xyz.com",
-                "addressTitle": "Our Location",
-                "address": "123 Main St, New York, NY, USA",
-                "hoursTitle": "Working Hours",
-                "hoursLine1": "Mon - Sat: 9am - 7pm",
-                "hoursLine2": "Sunday: CLOSED"
-              },
-              "form": {
-                "title": "Send Us a Message",
-                "description": "Fill out the form below and our team will get back to you shortly.",
-                "buttonText": "Send Message",
-                "servicesList": [
-                  "Residential Cleaning",
-                  "Commercial Cleaning",
-                  "Post-Construction Cleaning",
-                  "Window Cleaning",
-                  "Carpet Cleaning",
-                  "Other"
-                ]
-              },
-              "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.1444874457788!3d40.69766374865766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
-              "infoBoxes": [
-                {
-                  "icon": "FaClock",
-                  "title": "Working Hours",
-                  "desc1": "Mon - Sat: 9:00 AM - 7:00 PM",
-                  "desc2": "Sunday: Closed"
-                },
-                {
-                  "icon": "FaHeadset",
-                  "title": "Need Urgent Help?",
-                  "desc1": "Call us anytime for",
-                  "desc2": "emergency wedbliss service."
-                },
-                {
-                  "icon": "FaFileAlt",
-                  "title": "Request a Quote",
-                  "desc1": "Get a free, no-obligation",
-                  "desc2": "estimate for your wedbliss needs."
-                }
-              ]
-            }
-          }
-        },
-        "enquiry": {
-          "variants": {
-            "WedBlissEnquiry1": {
-              "subtitle": "GET A QUOTE",
-              "title1": "Request A",
-              "title2": "Quote",
-              "description": "Tell us about your cleaning requirements and we'll provide you with a customized quote. It's quick, easy and completely free.",
-              "features": [
-                {
-                  "icon": "FaCogs",
-                  "title": "Tailored to Your Needs",
-                  "description": "Get a quote based on your specific cleaning requirements."
-                },
-                {
-                  "icon": "FaBolt",
-                  "title": "Quick & Easy",
-                  "description": "Fill out the form in just a few minutes."
-                },
-                {
-                  "icon": "FaHandshake",
-                  "title": "No Obligation",
-                  "description": "Receive a personalized quote with no commitment."
-                }
-              ],
-              "form": {
-                "title1": "Request a",
-                "title2": "Quote",
-                "description": "Fill out the form below and our team will get back to you shortly with a customized quote.",
-                "buttonText": "Get a Quote ->",
-                "servicesList": [
-                  "Residential Cleaning",
-                  "Commercial Cleaning",
-                  "Post-Construction Cleaning",
-                  "Window Cleaning",
-                  "Carpet Cleaning",
-                  "Other"
-                ]
-              }
-            }
-          }
-        },
-        "Gallery": {
-          "variants": {
-            "WedBlissGallery1": {
-              "subtitle": "OUR GALLERY",
-              "title1": "Moments",
-              "title2": "That Tell Our Story",
-              "description": "Explore our beautiful moments from past events.",
-              "images": [
-                {
-                  "id": "gal1",
-                  "image": "/gallery/1.webp",
-                  "alt": "Gallery Image 1"
-                },
-                {
-                  "id": "gal2",
-                  "image": "/gallery/2.webp",
-                  "alt": "Gallery Image 2"
-                },
-                {
-                  "id": "gal3",
-                  "image": "/gallery/3.webp",
-                  "alt": "Gallery Image 3"
-                },
-                {
-                  "id": "gal4",
-                  "image": "/gallery/4.webp",
-                  "alt": "Gallery Image 4"
-                },
-                {
-                  "id": "gal5",
-                  "image": "/gallery/5.webp",
-                  "alt": "Gallery Image 5"
-                },
-                {
-                  "id": "gal6",
-                  "image": "/gallery/6.webp",
-                  "alt": "Gallery Image 6"
-                }
-              ],
-              "button": {
-                "text": "View All",
-                "url": "/gallery"
-              }
-            },
-            "WedBlissGalleryGrid1": {
-              "subtitle": "OUR GALLERY",
-              "title1": "Moments",
-              "title2": "That Tell Our Story",
-              "description": "Explore our gallery and get inspired by the beautiful events we have planned and created for our clients. Every event is a unique story, filled with love, joy and unforgettable memories.",
-              "images": [
-                {
-                  "id": "gal1",
-                  "image": "/gallery/1.webp",
-                  "alt": "Gallery Image 1"
-                },
-                {
-                  "id": "gal2",
-                  "image": "/gallery/2.webp",
-                  "alt": "Gallery Image 2"
-                },
-                {
-                  "id": "gal3",
-                  "image": "/gallery/3.webp",
-                  "alt": "Gallery Image 3"
-                },
-                {
-                  "id": "gal4",
-                  "image": "/gallery/4.webp",
-                  "alt": "Gallery Image 4"
-                },
-                {
-                  "id": "gal5",
-                  "image": "/gallery/5.webp",
-                  "alt": "Gallery Image 5"
-                },
-                {
-                  "id": "gal6",
-                  "image": "/gallery/6.webp",
-                  "alt": "Gallery Image 6"
-                },
-                {
-                  "id": "gal7",
-                  "image": "/gallery/7.webp",
-                  "alt": "Gallery Image 7"
-                },
-                {
-                  "id": "gal8",
-                  "image": "/gallery/8.webp",
-                  "alt": "Gallery Image 8"
-                },
-                {
-                  "id": "gal9",
-                  "image": "/gallery/9.webp",
-                  "alt": "Gallery Image 9"
-                },
-                {
-                  "id": "gal_p2_9",
-                  "image": "/gallery/9.webp",
-                  "alt": "Gallery Image 9"
-                },
-                {
-                  "id": "gal_p2_8",
-                  "image": "/gallery/8.webp",
-                  "alt": "Gallery Image 8"
-                },
-                {
-                  "id": "gal_p2_7",
-                  "image": "/gallery/7.webp",
-                  "alt": "Gallery Image 7"
-                },
-                {
-                  "id": "gal_p2_6",
-                  "image": "/gallery/6.webp",
-                  "alt": "Gallery Image 6"
-                },
-                {
-                  "id": "gal_p2_5",
-                  "image": "/gallery/5.webp",
-                  "alt": "Gallery Image 5"
-                },
-                {
-                  "id": "gal_p2_4",
-                  "image": "/gallery/4.webp",
-                  "alt": "Gallery Image 4"
-                },
-                {
-                  "id": "gal_p2_3",
-                  "image": "/gallery/3.webp",
-                  "alt": "Gallery Image 3"
-                },
-                {
-                  "id": "gal_p2_2",
-                  "image": "/gallery/2.webp",
-                  "alt": "Gallery Image 2"
-                },
-                {
-                  "id": "gal_p2_1",
-                  "image": "/gallery/1.webp",
-                  "alt": "Gallery Image 1"
-                }
-              ],
-              "button": {
-                "text": "View More Gallery",
-                "url": "/gallery"
-              }
             }
           }
         },
         "Faq": {
           "variants": {
             "WedBlissFaq1": {
-              "subtitle": "FAQ",
-              "title1": "Frequently",
-              "title2": "Asked Questions",
-              "description": "Below you'll find answers to some of the most frequently asked questions. If you have any other questions, feel free to contact us.",
-              "image": "/about/faq.webp",
+              "subtitle": "CURIOUS MINDS",
+              "title1": "Frequently Asked",
+              "title2": "Questions",
+              "description": "Everything you need to know about starting your bespoke wedding or event journey with WedBliss.",
+              "image": "/other/faq.webp",
               "faqs": [
                 {
                   "id": "faq1",
-                  "question": "What can WedBliss do for an Event?",
-                  "answer": "WedBliss specializes in the planning of corporate, social and non-profit events. This includes birthday, celebration parties, employee events, conferences or meetings, weddings, bridal showers and more! We have a creative approach to bring your dreams to a reality."
+                  "question": "What is the typical planning timeline for a luxury wedding?",
+                  "answer": "While we frequently plan grand celebrations 9 to 14 months in advance, our nimble concierge team can also design extraordinary weddings with shorter lead times depending on venue availability."
                 },
                 {
                   "id": "faq2",
-                  "question": "How far will you travel for an Event?",
-                  "answer": "We are available for travel worldwide depending on the project scope and schedule."
+                  "question": "Do you coordinate international destination celebrations?",
+                  "answer": "Yes, destination weddings are our signature specialty. We handle guest logistics, customs liaison, local vendor curation, and on-site event directors worldwide."
                 },
                 {
                   "id": "faq3",
-                  "question": "How Can I Contact You?",
-                  "answer": "You can reach us through our contact page, by phone, or by email."
+                  "question": "How do you tailor the event to our personal taste and budget?",
+                  "answer": "We begin with an in-depth design consultation to create custom mood boards, bespoke menus, and transparent investment allocations tailored precisely to your priorities."
                 },
                 {
                   "id": "faq4",
-                  "question": "What happens if an Event is cancelled?",
-                  "answer": "We have a detailed cancellation policy outlined in our contract, designed to protect both parties."
-                },
-                {
-                  "id": "faq5",
-                  "question": "How early should you start planning an event?",
-                  "answer": "We recommend starting at least 6-12 months in advance for large events."
-                },
-                {
-                  "id": "faq6",
-                  "question": "Do you charge separately for your various event services?",
-                  "answer": "We offer customized packages based on your specific needs."
-                },
-                {
-                  "id": "faq7",
-                  "question": "If someone wants to get started planning an event, what should they do?",
-                  "answer": "Simply fill out our inquiry form or give us a call to schedule a consultation."
-                }
-              ]
-            }
-          }
-        },
-        "ServicesGrid": {
-          "variants": {
-            "WedBlissServicesGrid1": {
-              "subtitle": "OUR SERVICES",
-              "title1": "Create",
-              "title2": "Unforgettable Moments",
-              "description": "From intimate gatherings to grand celebrations, we offer a complete range of event planning services to make your special moments truly memorable.",
-              "services": [
-                {
-                  "id": "sg1",
-                  "title": "Wedding Planning",
-                  "image": "/service/weeding.webp",
-                  "icon": "FaRing",
-                  "url": "/services/wedding"
-                },
-                {
-                  "id": "sg2",
-                  "title": "Birthday Party",
-                  "image": "/service/weeding.webp",
-                  "icon": "FaBirthdayCake",
-                  "url": "/services/birthday"
-                },
-                {
-                  "id": "sg3",
-                  "title": "Corporate Event",
-                  "image": "/service/corporate party.webp",
-                  "icon": "FaUsers",
-                  "url": "/services/corporate"
-                },
-                {
-                  "id": "sg4",
-                  "title": "Private Party",
-                  "image": "/service/private party.webp",
-                  "icon": "FaGlassCheers",
-                  "url": "/services/private-party"
-                },
-                {
-                  "id": "sg5",
-                  "title": "Engagement Ceremony",
-                  "image": "/service/weeding.webp",
-                  "icon": "FaHeart",
-                  "url": "/services/engagement"
-                },
-                {
-                  "id": "sg6",
-                  "title": "Event Decoration",
-                  "image": "/service/private party.webp",
-                  "icon": "FaFan",
-                  "url": "/services/decoration"
-                },
-                {
-                  "id": "sg7",
-                  "title": "Anniversary Celebration",
-                  "image": "/service/weeding.webp",
-                  "icon": "FaHeart",
-                  "url": "/services/anniversary"
-                },
-                {
-                  "id": "sg8",
-                  "title": "Bridal Shower",
-                  "image": "/service/private party.webp",
-                  "icon": "FaGlassCheers",
-                  "url": "/services/bridal-shower"
-                },
-                {
-                  "id": "sg9",
-                  "title": "Baby Shower",
-                  "image": "/service/weeding.webp",
-                  "icon": "FaBirthdayCake",
-                  "url": "/services/baby-shower"
-                },
-                {
-                  "id": "sg10",
-                  "title": "Product Launch",
-                  "image": "/service/corporate party.webp",
-                  "icon": "FaUsers",
-                  "url": "/services/product-launch"
-                },
-                {
-                  "id": "sg11",
-                  "title": "Gala Dinner",
-                  "image": "/service/private party.webp",
-                  "icon": "FaGlassCheers",
-                  "url": "/services/gala"
-                },
-                {
-                  "id": "sg12",
-                  "title": "Charity Event",
-                  "image": "/service/weeding.webp",
-                  "icon": "FaHeart",
-                  "url": "/services/charity"
-                }
-              ]
-            }
-          }
-        },
-        "Sponsors": {
-          "variants": {
-            "WedBlissSponsors1": {
-              "subtitle": "WORLDWIDE",
-              "title1": "Our",
-              "title2": "Sponsors",
-              "sponsors": [
-                {
-                  "id": "sp1",
-                  "image": "/partner/1.webp",
-                  "alt": "Insignia",
-                  "url": "#"
-                },
-                {
-                  "id": "sp2",
-                  "image": "/partner/2.webp",
-                  "alt": "Salmon River",
-                  "url": "#"
-                },
-                {
-                  "id": "sp3",
-                  "image": "/partner/3.webp",
-                  "alt": "The Gearhead",
-                  "url": "#"
-                },
-                {
-                  "id": "sp4",
-                  "image": "/partner/4.webp",
-                  "alt": "Cupcake",
-                  "url": "#"
-                },
-                {
-                  "id": "sp5",
-                  "image": "/partner/5.webp",
-                  "alt": "The Lighthouse",
-                  "url": "#"
-                },
-                {
-                  "id": "sp6",
-                  "image": "/partner/1.webp",
-                  "alt": "Insignia 2",
-                  "url": "#"
-                },
-                {
-                  "id": "sp7",
-                  "image": "/partner/2.webp",
-                  "alt": "Salmon River 2",
-                  "url": "#"
-                },
-                {
-                  "id": "sp8",
-                  "image": "/partner/3.webp",
-                  "alt": "The Gearhead 2",
-                  "url": "#"
+                  "question": "Will our lead planner be on-site throughout the wedding day?",
+                  "answer": "Always. Your dedicated lead coordinator and an experienced on-site production team oversee every moment from dawn until the final guest departure."
                 }
               ]
             }
@@ -2749,27 +382,24 @@
         "Contact": {
           "variants": {
             "WedBlissContact1": {
-              "subtitle": "GET IN TOUCH",
-              "title1": "Contact",
-              "title2": "Us",
-              "description": "We'd love to hear from you! Whether you're planning a wedding, a corporate event, a birthday celebration or any special occasion, our team is here to help you create unforgettable moments.",
+              "subtitle": "REACH OUR CONCIERGE",
+              "title1": "Let's Begin Your",
+              "title2": "Celebration",
+              "description": "Tell us about your upcoming date, dream setting, and vision. We look forward to creating magic together.",
               "contactInfo": {
-                "phoneTitle": "Phone",
-                "phone": "+1 000000000\nSupport: +1 000000000",
-                "emailTitle": "E-Mail",
-                "email": "info@xyz.com\nsupport@xyz.com",
-                "addressTitle": "Address",
-                "address": "123 Main St,\nNew York, NY, USA",
-                "hoursTitle": "",
-                "hoursLine1": "",
-                "hoursLine2": ""
+                "phoneTitle": "Direct Line",
+                "phone": "+1 000000000",
+                "emailTitle": "Private Concierge",
+                "email": "info@xyz.com",
+                "addressTitle": "Headquarters",
+                "address": "123 Main St,\nNew York, NY, USA"
               },
               "form": {
-                "title": "Get The Party Started",
-                "description": "Share your event details with us and our team will get back to you as soon as possible with the best suggestions and a customized plan.",
-                "buttonText": "Make A Reservation"
+                "title": "Request A Consultation",
+                "description": "Fill out your details below and a dedicated wedding designer will contact you within 24 hours.",
+                "buttonText": "Schedule My Consultation"
               },
-              "image": "/service/weeding.webp",
+              "image": "/other/contact.webp",
               "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
             }
           }
@@ -2777,7 +407,6 @@
       },
       "templateComponents": {
         "shared": {
-          "Topbar": "WedBlissTopBar1",
           "Header": "WedBlissHeader1",
           "Footer": "WedBlissFooter1"
         },
@@ -2797,68 +426,24 @@
                 "component": "WedBlissServices1"
               },
               {
-                "key": "Testimonials",
-                "component": "WedBlissTestimonials1"
-              }
-            ]
-          },
-          "about": {
-            "components": [
-              {
-                "key": "AboutUs",
-                "component": "WedBlissAboutUs1"
+                "key": "WhatWeDo",
+                "component": "WedBlissWhatWeDo1"
               },
-              {
-                "key": "WhyChooseUs",
-                "component": "WedBlissWhyChooseUs1"
-              }
-            ]
-          },
-          "services": {
-            "components": [
-              {
-                "key": "ServicesGrid",
-                "component": "WedBlissServicesGrid1"
-              },
-              {
-                "key": "Sponsors",
-                "component": "WedBlissSponsors1"
-              }
-            ]
-          },
-          "gallery": {
-            "components": [
               {
                 "key": "Gallery",
                 "component": "WedBlissGallery1"
               },
               {
-                "key": "VideoGallery",
-                "component": "WedBlissVideoGallery1"
-              }
-            ]
-          },
-          "faq": {
-            "components": [
+                "key": "Testimonials",
+                "component": "WedBlissTestimonials1"
+              },
               {
                 "key": "Faq",
                 "component": "WedBlissFaq1"
-              }
-            ]
-          },
-          "contact": {
-            "components": [
+              },
               {
                 "key": "Contact",
                 "component": "WedBlissContact1"
-              }
-            ]
-          },
-          "quote": {
-            "components": [
-              {
-                "key": "Quote",
-                "component": "WedBlissQuote1"
               }
             ]
           }

@@ -6,18 +6,31 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { FaArrowLeft, FaArrowRight, FaQuoteRight, FaStar } from 'react-icons/fa';
 
 export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'center', skipSnaps: false });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+    loop: true, 
+    align: 'start', 
+    skipSnaps: false,
+    slidesToScroll: 1
+  });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
-  const scrollTo = useCallback((index: number) => emblaApi && emblaApi.scrollTo(index), [emblaApi]);
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  const scrollTo = useCallback((index: number) => {
+    if (emblaApi) emblaApi.scrollTo(index);
+  }, [emblaApi]);
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
     setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi, setSelectedIndex]);
+  }, [emblaApi]);
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -25,36 +38,59 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
     setScrollSnaps(emblaApi.scrollSnapList());
     emblaApi.on('select', onSelect);
     emblaApi.on('reInit', onSelect);
-  }, [emblaApi, setScrollSnaps, onSelect]);
+    return () => {
+      emblaApi.off('select', onSelect);
+      emblaApi.off('reInit', onSelect);
+    };
+  }, [emblaApi, onSelect]);
 
-  if (!data || !data.testimonials) return null;
+  if (!data || !data.testimonials || data.testimonials.length === 0) return null;
 
-  // Add dummy testimonials if there are fewer than 3 to make the slider look good
-  const testimonials = data.testimonials.length < 3
-    ? [...data.testimonials, ...Array(3 - data.testimonials.length).fill(data.testimonials[0]).map((t, i) => ({ ...t, id: 'dummy-' + i }))]
-    : data.testimonials;
+  const testimonials = data.testimonials;
 
   return (
-    <section className="bg-[#fcfaf9] pt-4 lg:pt-6 pb-16 lg:pb-12 relative overflow-hidden">
-      <div className="max-w-[1250px] mx-auto px-4 md:px-12 lg:px-16 relative">
+    <section className="bg-[#faf7f2] pt-4 lg:pt-6 pb-16 lg:pb-12 relative overflow-hidden">
+      <div className="max-w-[1250px] mx-auto px-4 md:px-8 relative">
 
         {/* Header */}
         <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-4 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#d6aeb9] mb-4">
-            <span className="w-10 md:w-16 h-[1px] bg-[#d6aeb9]"></span>
+          <div className="inline-flex items-center gap-4 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-accent-light)] mb-4">
+            <span className="w-10 md:w-16 h-[1px] bg-[var(--color-accent-light)]"></span>
             {data.subtitle}
-            <span className="w-10 md:w-16 h-[1px] bg-[#d6aeb9]"></span>
+            <span className="w-10 md:w-16 h-[1px] bg-[var(--color-accent-light)]"></span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#3f292b] mb-4 font-serif">
-            {data.title1} <span className="text-[#7f183c]">{data.title2}</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[var(--color-primary)] mb-4 font-serif">
+            {data.title1} <span className="text-[var(--color-accent-muted)]">{data.title2}</span>
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto text-sm md:text-base">
+          <p className="text-[var(--color-text-light)] max-w-2xl mx-auto text-sm md:text-base">
             {data.description}
           </p>
         </div>
 
-        {/* Embla Carousel */}
-        <div className="relative">
+        {/* Carousel Outer Wrapper with Gutters for Arrows */}
+        <div className="relative px-6 sm:px-12 md:px-14">
+          
+          {/* Left Arrow Button (outside the cards in the gutter) */}
+          <button
+            type="button"
+            onClick={scrollPrev}
+            aria-label="Previous Testimonial"
+            className="absolute left-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-[var(--color-accent-muted)] text-white flex items-center justify-center hover:bg-[var(--color-primary)] active:scale-95 transition-all shadow-md z-20 cursor-pointer"
+          >
+            <FaArrowLeft className="text-sm" />
+          </button>
+
+          {/* Right Arrow Button (outside the cards in the gutter) */}
+          <button
+            type="button"
+            onClick={scrollNext}
+            aria-label="Next Testimonial"
+            className="absolute right-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-[var(--color-accent-muted)] text-white flex items-center justify-center hover:bg-[var(--color-primary)] active:scale-95 transition-all shadow-md z-20 cursor-pointer"
+          >
+            <FaArrowRight className="text-sm" />
+          </button>
+
+          {/* Embla Viewport */}
           <div className="overflow-hidden py-4" ref={emblaRef}>
             <div className="flex touch-pan-y -ml-6">
               {testimonials.map((testi, index) => {
@@ -65,29 +101,38 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
                     className="flex-[0_0_100%] min-w-0 md:flex-[0_0_50%] lg:flex-[0_0_33.333%] pl-6"
                   >
                     <div
-                      className={`bg-white rounded-xl p-8 h-full flex flex-col transition-all duration-300 border-2 ${isActive ? 'border-[#9a3a54] bg-[#fffafb] shadow-md' : 'border-[#f2e6e8] shadow-sm'}`}
+                      className={`bg-white rounded-2xl p-7 lg:p-8 h-full flex flex-col justify-between transition-all duration-300 border-2 ${
+                        isActive 
+                          ? 'border-[var(--color-accent-muted)] shadow-lg' 
+                          : 'border-[var(--color-border)] shadow-sm hover:border-[var(--color-accent-light)]'
+                      }`}
                     >
-                      {/* Top Row: Avatar + Stars + Quote Icon */}
-                      <div className="flex justify-between items-start mb-6">
-                        <div className="flex items-center gap-4">
-                          <img src={testi.avatar} alt={testi.name} className="w-20 h-20 rounded-full object-cover shadow-sm" />
-
+                      {/* Top Row: Avatar & Quote Icon */}
+                      <div>
+                        <div className="flex justify-between items-start mb-6">
+                          <img 
+                            src={testi.avatar} 
+                            alt={testi.name} 
+                            className="w-16 h-16 rounded-full object-cover shadow-sm border-2 border-[var(--color-accent-light)]" 
+                          />
+                          <FaQuoteRight className="text-3xl text-[var(--color-accent-light)] opacity-40" />
                         </div>
-                        <FaQuoteRight className="text-4xl text-[#ebd9dc] opacity-60" />
+
+                        {/* Quote Text */}
+                        <p className="text-[var(--color-text)] text-sm md:text-[15px] leading-relaxed mb-6 font-serif italic">
+                          "{testi.quote}"
+                        </p>
                       </div>
-
-                      {/* Quote Text */}
-                      <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-grow">
-                        {testi.quote}
-                      </p>
-
-                      {/* Divider */}
-                      <hr className="border-[#f2e6e8] mb-4" />
 
                       {/* Footer Info */}
                       <div>
-                        <h4 className="font-bold text-[#7f183c] text-lg leading-tight">{testi.name}</h4>
-                        <p className="text-xs text-gray-400 mt-1">{testi.location}</p>
+                        <hr className="border-[var(--color-border)] mb-4" />
+                        <h4 className="font-bold text-[var(--color-primary)] text-base md:text-lg leading-tight font-serif">
+                          {testi.name}
+                        </h4>
+                        <p className="text-xs text-[var(--color-text-light)] mt-1">
+                          {testi.location}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -96,31 +141,26 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
             </div>
           </div>
 
-          {/* Navigation Arrows */}
-          <button
-            onClick={scrollPrev}
-            className="absolute top-1/2 -left-4 md:-left-12 -translate-y-1/2 w-10 h-10 rounded-full bg-[#7f183c] text-white flex items-center justify-center hover:bg-[#5a1029] transition-colors shadow-md z-10"
-          >
-            <FaArrowLeft className="text-sm" />
-          </button>
-          <button
-            onClick={scrollNext}
-            className="absolute top-1/2 -right-4 md:-right-12 -translate-y-1/2 w-10 h-10 rounded-full bg-[#7f183c] text-white flex items-center justify-center hover:bg-[#5a1029] transition-colors shadow-md z-10"
-          >
-            <FaArrowRight className="text-sm" />
-          </button>
         </div>
 
-        {/* Pagination Dots */}
-        <div className="flex justify-center items-center gap-2 mt-10">
-          {scrollSnaps.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => scrollTo(index)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === selectedIndex ? 'bg-[#7f183c] w-3 h-3' : 'bg-[#e8cdd2]'}`}
-            />
-          ))}
-        </div>
+        {/* Pagination Dots (Clickable & Active) */}
+        {scrollSnaps.length > 1 && (
+          <div className="flex justify-center items-center gap-2.5 mt-10">
+            {scrollSnaps.map((_, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => scrollTo(index)}
+                aria-label={`Go to slide ${index + 1}`}
+                className={`transition-all duration-300 rounded-full cursor-pointer ${
+                  index === selectedIndex 
+                    ? 'bg-[var(--color-accent-muted)] w-8 h-2.5 shadow-sm' 
+                    : 'bg-[var(--color-border)] hover:bg-[var(--color-accent-light)] w-2.5 h-2.5'
+                }`}
+              />
+            ))}
+          </div>
+        )}
 
       </div>
     </section>

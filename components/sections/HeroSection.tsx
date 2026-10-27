@@ -8,15 +8,16 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
   return (
     <section id="home" className="relative flex min-h-[480px] w-full items-center bg-[#faf7f2] overflow-hidden lg:min-h-[580px] scroll-mt-20">
       {/* Background Image Container */}
-      <div className="absolute right-0 top-0 h-full w-full lg:w-[70%]">
+      <div className="absolute right-0 top-0 h-full w-full lg:w-[65%]">
         <img 
           src={data.image1} 
           alt="" 
           aria-hidden="true" 
-          className="h-full w-full object-cover object-[70%_center]" 
+          className="h-full w-full object-cover object-[65%_center]" 
         />
-        {/* Gradient Overlay to blend with the solid color on the left */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#faf7f2] via-[#faf7f2]/90 sm:via-[#faf7f2]/60 to-transparent lg:via-[#faf7f2] lg:via-20%" />
+        {/* Soft, minimal gradient only where text meets image on left */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#faf7f2] via-[#faf7f2]/50 to-transparent lg:w-[45%]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#faf7f2]/40 via-transparent to-transparent lg:hidden" />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-[1250px] px-6 py-12 lg:py-16 lg:px-8">
@@ -36,31 +37,9 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
           </h1>
 
           {/* Description */}
-          <p className="mb-10 text-sm leading-relaxed text-[var(--color-text)] sm:text-base lg:text-lg max-w-[500px]">
+          <p className="mb-4 text-sm leading-relaxed text-[var(--color-text)] sm:text-base lg:text-lg max-w-[500px]">
             {data.description}
           </p>
-
-          {/* Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {data.button1 && (
-              <Link 
-                href={data.button1.url} 
-                className="rounded-md bg-[var(--color-accent)] px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--color-primary)] flex items-center justify-center gap-2"
-              >
-                {data.button1.text.replace('>', '').trim()}
-                {data.button1.text.includes('>') && <span className="font-bold text-lg leading-none">&gt;</span>}
-              </Link>
-            )}
-            {data.button2 && (
-              <Link 
-                href={data.button2.url} 
-                className="rounded-md border border-[var(--color-accent-light)] bg-transparent px-8 py-3.5 text-sm font-semibold text-[var(--color-primary)] transition-colors hover:bg-[var(--color-accent-light)] hover:text-white flex items-center justify-center gap-2"
-              >
-                {data.button2.text.replace('>', '').trim()}
-                {data.button2.text.includes('>') && <span className="font-bold text-lg leading-none">&gt;</span>}
-              </Link>
-            )}
-          </div>
         </div>
       </div>
     </section>
