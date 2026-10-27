@@ -65,7 +65,7 @@ export const Header = ({ data }: { data?: HeaderData }) => {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="absolute left-0 top-full flex max-h-[calc(100vh-70px)] w-full flex-col overflow-y-auto border-t border-[#e8e1ee] bg-white p-4 shadow-lg lg:hidden">
+        <div className="absolute left-0 top-full flex max-h-[calc(100vh-70px)] w-full flex-col overflow-y-auto border-t border-[var(--color-border)] bg-white p-4 shadow-lg lg:hidden">
           {data.navLinks?.map((link) => {
             const isActive = pathname === link.url;
             return (
@@ -73,7 +73,7 @@ export const Header = ({ data }: { data?: HeaderData }) => {
                 key={link.id} 
                 href={link.url} 
                 onClick={() => setMobileMenuOpen(false)} 
-                className={`flex items-center justify-between border-b border-[#eee9f2] px-4 py-3 text-base font-semibold ${
+                className={`flex items-center justify-between border-b border-[var(--color-border)] px-4 py-3 text-base font-semibold ${
                   isActive ? 'text-[var(--color-accent)]' : 'text-[var(--color-primary)]'
                 }`}
               >

@@ -15,7 +15,7 @@ export const WhatWeDoSection = ({ data }: { data?: WhatWeDoData }) => {
   if (!data) return null;
 
   return (
-    <section className="w-full py-20 lg:py-12 bg-[#faf7f2] relative overflow-hidden">
+    <section className="w-full py-20 lg:py-12 bg-[var(--color-bg-alt)] relative overflow-hidden">
       <div className="max-w-[1250px] mx-auto px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
         {/* Left Side: Image */}

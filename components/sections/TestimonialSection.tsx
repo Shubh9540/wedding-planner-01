@@ -49,7 +49,7 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
   const testimonials = data.testimonials;
 
   return (
-    <section className="bg-[#faf7f2] pt-4 lg:pt-6 pb-16 lg:pb-12 relative overflow-hidden">
+    <section className="bg-[var(--color-bg-alt)] pt-4 lg:pt-6 pb-16 lg:pb-12 relative overflow-hidden">
       <div className="max-w-[1250px] mx-auto px-4 md:px-8 relative">
 
         {/* Header */}
@@ -94,7 +94,9 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
           <div className="overflow-hidden py-4" ref={emblaRef}>
             <div className="flex touch-pan-y -ml-6">
               {testimonials.map((testi, index) => {
-                const isActive = index === selectedIndex;
+                // On 3-column view, the active/center card is offset by +1
+                const activeIndex = (selectedIndex + 1) % testimonials.length;
+                const isActive = index === activeIndex;
                 return (
                   <div
                     key={testi.id}
@@ -103,7 +105,7 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
                     <div
                       className={`bg-white rounded-2xl p-7 lg:p-8 h-full flex flex-col justify-between transition-all duration-300 border-2 ${
                         isActive 
-                          ? 'border-[var(--color-accent-muted)] shadow-lg' 
+                          ? 'border-[var(--color-accent-muted)] shadow-xl scale-[1.02] ring-1 ring-[var(--color-accent-muted)]/20' 
                           : 'border-[var(--color-border)] shadow-sm hover:border-[var(--color-accent-light)]'
                       }`}
                     >

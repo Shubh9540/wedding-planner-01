@@ -157,15 +157,15 @@ export interface WedBlissTemplateData {
     WedBliss: {
       templateComponents?: any;
       sections: {
-        Header?: { variants?: { WedBlissHeader1?: HeaderData } };
-        Hero?: { variants?: { WedBlissHero1?: HeroData } };
-        AboutUs?: { variants?: { WedBlissAboutUs1?: AboutUsData } };
-        Services?: { variants?: { WedBlissServices1?: ServicesData } };
-        WhatWeDo?: { variants?: { WedBlissWhatWeDo1?: WhatWeDoData } };
-        Gallery?: { variants?: { WedBlissGallery1?: GalleryData } };
-        Testimonials?: { variants?: { WedBlissTestimonials1?: TestimonialsData } };
-        Faq?: { variants?: { WedBlissFaq1?: FaqData } };
-        Contact?: { variants?: { WedBlissContact1?: ContactData } };
+        Header?: { variants?: { WedBlissHeader2?: HeaderData } };
+        Hero?: { variants?: { WedBlissHero2?: HeroData } };
+        AboutUs?: { variants?: { WedBlissAboutUs2?: AboutUsData } };
+        Services?: { variants?: { WedBlissServices2?: ServicesData } };
+        WhatWeDo?: { variants?: { WedBlissWhatWeDo2?: WhatWeDoData } };
+        Gallery?: { variants?: { WedBlissGallery2?: GalleryData } };
+        Testimonials?: { variants?: { WedBlissTestimonials2?: TestimonialsData } };
+        Faq?: { variants?: { WedBlissFaq2?: FaqData } };
+        Contact?: { variants?: { WedBlissContact2?: ContactData } };
       };
     };
   };

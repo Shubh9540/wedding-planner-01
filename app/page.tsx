@@ -24,15 +24,15 @@ export default function Home() {
 
   return (
     <main className="bg-[var(--color-bg-main)] min-h-screen flex flex-col scroll-smooth w-full overflow-x-hidden">
-      <Header data={sectionData.Header?.variants?.WedBlissHeader1} />
-      <HeroSection data={sectionData.Hero?.variants?.WedBlissHero1} />
-      <AboutUsSection data={sectionData.AboutUs?.variants?.WedBlissAboutUs1} />
-      <ServicesSection data={sectionData.Services?.variants?.WedBlissServices1} />
-      <WhatWeDoSection data={sectionData.WhatWeDo?.variants?.WedBlissWhatWeDo1} />
-      <GallerySection data={sectionData.Gallery?.variants?.WedBlissGallery1} />
-      <TestimonialSection data={sectionData.Testimonials?.variants?.WedBlissTestimonials1} />
-      <FaqSection data={sectionData.Faq?.variants?.WedBlissFaq1} />
-      <ContactSection data={sectionData.Contact?.variants?.WedBlissContact1} />
+      <Header data={sectionData.Header?.variants?.WedBlissHeader2} />
+      <HeroSection data={sectionData.Hero?.variants?.WedBlissHero2} />
+      <AboutUsSection data={sectionData.AboutUs?.variants?.WedBlissAboutUs2} />
+      <ServicesSection data={sectionData.Services?.variants?.WedBlissServices2} />
+      <WhatWeDoSection data={sectionData.WhatWeDo?.variants?.WedBlissWhatWeDo2} />
+      <GallerySection data={sectionData.Gallery?.variants?.WedBlissGallery2} />
+      <TestimonialSection data={sectionData.Testimonials?.variants?.WedBlissTestimonials2} />
+      <FaqSection data={sectionData.Faq?.variants?.WedBlissFaq2} />
+      <ContactSection data={sectionData.Contact?.variants?.WedBlissContact2} />
       <Footer data={commonData.Footer} />
     </main>
   );

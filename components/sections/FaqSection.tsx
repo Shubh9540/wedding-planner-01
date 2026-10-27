@@ -10,7 +10,7 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
   if (!data || !data.faqs) return null;
 
   return (
-    <section id="faq" className="w-full bg-[#faf7f2] py-20 lg:py-12 overflow-hidden scroll-mt-20">
+    <section id="faq" className="w-full bg-[var(--color-bg-alt)] py-20 lg:py-12 overflow-hidden scroll-mt-20">
       <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
 
@@ -19,7 +19,7 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
             {/* The decorative border */}
             <div className="absolute -inset-4 border border-[var(--color-accent-light)] rounded-tl-[150px] md:rounded-tl-[250px] rounded-br-md rounded-tr-md rounded-bl-md pointer-events-none hidden md:block">
               {/* Star icon on the right edge center */}
-              <div className="absolute top-1/2 -right-3 -translate-y-1/2 text-[var(--color-accent-light)] text-xl bg-[#faf7f2] px-1">
+              <div className="absolute top-1/2 -right-3 -translate-y-1/2 text-[var(--color-accent-light)] text-xl bg-[var(--color-bg-alt)] px-1">
                 ✦
               </div>
             </div>
@@ -60,7 +60,7 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
                       onClick={() => setOpenId(isOpen ? null : faq.id)}
                       className={`w-full flex items-center justify-between p-3.5 px-5 text-left transition-colors duration-300 ${isOpen
                         ? 'bg-[var(--color-accent-muted)] text-white rounded-t-md'
-                        : 'bg-white text-[var(--color-primary)] hover:bg-[#eaf1ec] rounded-md border border-[var(--color-border)]'
+                        : 'bg-white text-[var(--color-primary)] hover:bg-[var(--color-bg-subtle)] rounded-md border border-[var(--color-border)]'
                         }`}
                     >
                       <div className="flex items-center gap-4">

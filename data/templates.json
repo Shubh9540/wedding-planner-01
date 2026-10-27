@@ -98,7 +98,7 @@
       "sections": {
         "Header": {
           "variants": {
-            "WedBlissHeader1": {
+            "WedBlissHeader2": {
               "logo": "/main logo/header_logo.webp",
               "logoAlt": "WedBliss Luxury Logo",
               "navLinks": [
@@ -137,7 +137,7 @@
         },
         "Hero": {
           "variants": {
-            "WedBlissHero1": {
+            "WedBlissHero2": {
               "subtitle": "CURATING TIMELESS CELEBRATIONS",
               "title1": "CELEBRATE YOUR",
               "title2": "LOVE STORY",
@@ -148,7 +148,7 @@
         },
         "AboutUs": {
           "variants": {
-            "WedBlissAboutUs1": {
+            "WedBlissAboutUs2": {
               "subtitle": "OUR HERITAGE & PASSION",
               "title1": "Elegance In Every",
               "title2": "Celebration",
@@ -184,7 +184,7 @@
         },
         "Services": {
           "variants": {
-            "WedBlissServices1": {
+            "WedBlissServices2": {
               "subtitle": "SIGNATURE OFFERINGS",
               "title1": "Exquisite Event",
               "title2": "Curation",
@@ -220,7 +220,7 @@
         },
         "WhatWeDo": {
           "variants": {
-            "WedBlissWhatWeDo1": {
+            "WedBlissWhatWeDo2": {
               "subtitle": "THE WEDBLISS STANDARD",
               "title1": "Flawless Execution,",
               "title2": "Artful",
@@ -246,7 +246,7 @@
         },
         "Gallery": {
           "variants": {
-            "WedBlissGallery1": {
+            "WedBlissGallery2": {
               "subtitle": "PORTFOLIO OF WONDER",
               "title1": "Unforgettable",
               "title2": "Memories",
@@ -288,7 +288,7 @@
         },
         "Testimonials": {
           "variants": {
-            "WedBlissTestimonials1": {
+            "WedBlissTestimonials2": {
               "subtitle": "HEARTFELT WORDS",
               "title1": "What Our Couples",
               "title2": "Say About Us",
@@ -348,7 +348,7 @@
         },
         "Faq": {
           "variants": {
-            "WedBlissFaq1": {
+            "WedBlissFaq2": {
               "subtitle": "CURIOUS MINDS",
               "title1": "Frequently Asked",
               "title2": "Questions",
@@ -381,7 +381,7 @@
         },
         "Contact": {
           "variants": {
-            "WedBlissContact1": {
+            "WedBlissContact2": {
               "subtitle": "REACH OUR CONCIERGE",
               "title1": "Let's Begin Your",
               "title2": "Celebration",
@@ -407,43 +407,43 @@
       },
       "templateComponents": {
         "shared": {
-          "Header": "WedBlissHeader1",
-          "Footer": "WedBlissFooter1"
+          "Header": "WedBlissHeader2",
+          "Footer": "WedBlissFooter2"
         },
         "pages": {
           "home": {
             "components": [
               {
                 "key": "HeroSection",
-                "component": "WedBlissHero1"
+                "component": "WedBlissHero2"
               },
               {
                 "key": "AboutUs",
-                "component": "WedBlissAboutUs1"
+                "component": "WedBlissAboutUs2"
               },
               {
                 "key": "Services",
-                "component": "WedBlissServices1"
+                "component": "WedBlissServices2"
               },
               {
                 "key": "WhatWeDo",
-                "component": "WedBlissWhatWeDo1"
+                "component": "WedBlissWhatWeDo2"
               },
               {
                 "key": "Gallery",
-                "component": "WedBlissGallery1"
+                "component": "WedBlissGallery2"
               },
               {
                 "key": "Testimonials",
-                "component": "WedBlissTestimonials1"
+                "component": "WedBlissTestimonials2"
               },
               {
                 "key": "Faq",
-                "component": "WedBlissFaq1"
+                "component": "WedBlissFaq2"
               },
               {
                 "key": "Contact",
-                "component": "WedBlissContact1"
+                "component": "WedBlissContact2"
               }
             ]
           }

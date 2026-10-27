@@ -6,7 +6,7 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
   if (!data) return null;
 
   return (
-    <section id="home" className="relative flex min-h-[480px] w-full items-center bg-[#faf7f2] overflow-hidden lg:min-h-[580px] scroll-mt-20">
+    <section id="home" className="relative flex min-h-[480px] w-full items-center bg-[var(--color-bg-alt)] overflow-hidden lg:min-h-[580px] scroll-mt-20">
       {/* Background Image Container */}
       <div className="absolute right-0 top-0 h-full w-full lg:w-[65%]">
         <img 
@@ -16,8 +16,8 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
           className="h-full w-full object-cover object-[65%_center]" 
         />
         {/* Soft, minimal gradient only where text meets image on left */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#faf7f2] via-[#faf7f2]/50 to-transparent lg:w-[45%]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#faf7f2]/40 via-transparent to-transparent lg:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg-alt)] via-[var(--color-bg-alt)]/50 to-transparent lg:w-[45%]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg-alt)]/40 via-transparent to-transparent lg:hidden" />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-[1250px] px-6 py-12 lg:py-16 lg:px-8">

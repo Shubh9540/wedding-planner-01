@@ -20,7 +20,7 @@ export const ServicesSection = ({
   if (!data) return null;
 
   return (
-    <section id="services" className="w-full py-20 lg:py-12 bg-[#faf7f2] relative scroll-mt-20">
+    <section id="services" className="w-full py-20 lg:py-12 bg-[var(--color-bg-alt)] relative scroll-mt-20">
       <div className="max-w-[1250px] mx-auto px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
@@ -76,7 +76,7 @@ export const ServicesSection = ({
               {/* Default Bottom Card Info (slides down slightly or fades on hover) */}
               <div className="absolute bottom-0 left-0 w-full bg-white/95 backdrop-blur-sm rounded-t-[30px] flex flex-col items-center pt-8 pb-7 px-6 transition-all duration-400 group-hover:translate-y-4 group-hover:opacity-0 z-10 border-t border-[var(--color-border)]">
                 {/* Icon Badge */}
-                <div className="absolute -top-7 w-14 h-14 bg-[var(--color-accent)] rounded-full border-4 border-[#faf7f2] flex items-center justify-center text-white text-xl shadow-md">
+                <div className="absolute -top-7 w-14 h-14 bg-[var(--color-accent)] rounded-full border-4 border-[var(--color-bg-alt)] flex items-center justify-center text-white text-xl shadow-md">
                   {renderIcon(service.icon)}
                 </div>
 

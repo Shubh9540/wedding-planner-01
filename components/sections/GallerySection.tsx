@@ -40,7 +40,7 @@ export const GallerySection = ({ data }: { data?: GalleryData }) => {
   if (!data || images.length === 0) return null;
 
   return (
-    <section id="gallery" className="w-full bg-[#faf7f2] py-16 lg:py-12 scroll-mt-20">
+    <section id="gallery" className="w-full bg-[var(--color-bg-alt)] py-16 lg:py-12 scroll-mt-20">
       <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8">
 
         {/* Section Header */}
