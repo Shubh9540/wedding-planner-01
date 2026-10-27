@@ -17,7 +17,7 @@ export default function NotFoundPage() {
   return (
     <main className="bg-white min-h-screen flex flex-col">
 
-      <Header data={sectionData.Header?.variants?.WedBlissHeader1} />
+      <Header data={sectionData.Header?.variants?.WedBlissHeader2} />
       
       <section className="w-full flex-grow py-20 md:py-32 flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-8xl md:text-9xl font-extrabold text-[var(--color-primary)] mb-4 drop-shadow-sm">404</h1>

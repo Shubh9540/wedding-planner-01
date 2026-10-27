@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4d8"/>
+      <stop offset="50%" stop-color="#c29d59"/>
+      <stop offset="100%" stop-color="#8a6927"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#143628"/>
+      <stop offset="100%" stop-color="#091b13"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bgGrad)"/>
+  <circle cx="32" cy="32" r="24" fill="none" stroke="url(#goldGrad)" stroke-width="1.8" opacity="0.6"/>
+  <circle cx="32" cy="32" r="21.5" fill="none" stroke="url(#goldGrad)" stroke-width="0.8" opacity="0.3"/>
+  <text x="32" y="38" font-family="'Times New Roman', serif" font-size="20" font-weight="bold" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="1">WB</text>
+  <polygon points="32,9 33.5,13.5 38,15 33.5,16.5 32,21 30.5,16.5 26,15 30.5,13.5" fill="url(#goldGrad)"/>
+</svg>

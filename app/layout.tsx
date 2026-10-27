@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   title: "WedBliss - Wedding Planner",
   description: "Professional wedding planning and special event services.",
   icons: {
-    icon: '/main logo/logo.webp',
-    shortcut: '/main logo/logo.webp',
-    apple: '/main logo/logo.webp',
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
 };
 
